@@ -2,3 +2,20 @@
   Override default refinery application CSS below.
   Formatting applies to all frontend.
 */
+
+body {
+	font-family: Century Gothic, Trebuchet MS, sans-serif;
+	background-color: #2b2922;
+	color: #999966;
+	font-size: 26px;
+	text-align: center;
+	}
+	
+a {
+	text-decoration: none;
+	color: #A32500;
+	}
+
+a:focus, a:hover {color:#A32500; text-decoration: underline;}
+
+.container {width:950px;}
