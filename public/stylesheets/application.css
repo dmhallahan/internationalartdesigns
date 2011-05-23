@@ -7,7 +7,7 @@ body {
 	font-family: Century Gothic, Trebuchet MS, sans-serif;
 	background-color: #2b2922;
 	color: #999966;
-	font-size: 26px;
+	font-size: 18px;
 	text-align: center;
 	}
 	
@@ -18,4 +18,25 @@ a {
 
 a:focus, a:hover {color:#A32500; text-decoration: underline;}
 
-.container {width:950px;}
+/*.container {width:950px;}*/
+
+/* HEADER */
+header {
+	background-image: url('images/header.jpg');
+	background-color: #A39770;
+	height: 230px;
+	width: 1000px;
+}
+
+/* FOOTER */
+footer {
+	background-image: url('images/footer.jpg');
+	background-color: #A39770;
+	color: #ffffff;
+}
+
+
+
+
+
+
