@@ -1,2 +1,6 @@
-
+ <div id="contact">
+   <span id="phone"><%= RefinerySetting.find_or_set(:phone_num, "")%></span><br/>
+   <span id="email"><%= mail_to "#{RefinerySetting.find_or_set(:email_address, "")}" %></span><br/>
+   <span id="map"><%= link_to "map", "/map" %></span>
+ </div>
 
