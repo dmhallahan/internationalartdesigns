@@ -19,24 +19,37 @@ a:focus, a:hover {color:#A32500; text-decoration: underline;}
 
 /* HEADER */
 header {
-	background-image: url('images/header.jpg');
 	background-color: #A39770;
-	height: 230px;
-	width: 1000px;
+	height: 250px;
+	width: 100%;
 }
+
+
+/* HEADER DETAILS */
+#info {text-align: right; position: relative; top: 20px; right: 90px;}
+#logo {position:relative; right:-14px; margin: 0 0 10px 0;}
+#phone {font-size: 18px; color: #ffffff}
+#contact {font-size: 12px;}
+
 
 /* FOOTER */
 footer {
-	background-image: url('images/footer.jpg');
+	/*background-image: url('images/footer.jpg');*/
 	background-color: #A39770;
-	color: #ffffff;
+	color: #2b2922;
 	height: 120px;
+	width: 100%;
+	font-size: 12px;
+	text-align: center;
+	padding: 40px 0 10px 0;
 }
 
-#body_content_title {position: absolute; top: 130px; color: #ffffff; font-size: 70px;}
+
+#body_content_title {position: relative; top: -120px; left: 50px; width:600px; color: #ffffff; font-size: 50px; font-weight: normal;}
+
 
 #body_content_left {
-	padding: 50px 0 0 40px;}
+	padding: 0 0 0 40px;}
 
 #body_content_right {
 	text-align: right;
@@ -50,10 +63,7 @@ footer {
 #body_content_right a {color:#999966}
 #body_content_right a:hover, a:focus {color:#A32500; text-decoration:none;}
 
-#contact {text-align: right; position: relative; top: 160px; right: 90px;}
-#phone {font-size: 18px; color: #ffffff}
-#email a {font-size: 11px; color: #ffffff;}
-#map a {font-size: 12px;}
+
 
 
 
