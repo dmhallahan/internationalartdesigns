@@ -21,7 +21,8 @@ gem 'sqlite3'
 # gem 'bj'
 # gem 'nokogiri'
 # gem 'sqlite3-ruby', :require => 'sqlite3'
-gem 'aws-s3', :require => 'aws/s3'
+# gem 'aws-s3', :require => 'aws/s3'
+gem 'fog'
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
@@ -33,7 +34,7 @@ gem 'aws-s3', :require => 'aws/s3'
 # REFINERY CMS ================================================================
 # Anything you put in here will be overridden when the app gets updated.
 
-gem 'refinerycms',              '= 0.9.9.21'
+gem 'refinerycms',              '= 0.9.9.22'
 
 group :development, :test do
   # To use refinerycms-testing, uncomment it (if it's commented out) and run 'bundle install'
