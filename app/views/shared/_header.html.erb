@@ -1,21 +1,21 @@
 
  <div id="info">
-   <div><%= link_to image_tag("/stylesheets/images/logo.jpg"),'home', :id=>'logo'%><div>
+   <div><%= link_to image_tag("/stylesheets/images/logo.png"),'home', :id=>'logo'%><div>
    <div id="phone"><%= RefinerySetting.find_or_set(:phone_num, "")%></div>
    <div id="contact"><%= link_to "contact", "/about-us" %></div>
  </div>
 
 
 <ul id="nav">
-	<li><%= link_to 'COLLECTIONS', '/collections', :class=> is_current_page?("collections") %></li>
+	<li><%= link_to 'COLLECTIONS', '/collections', :class=> is_collection_page? %></li>
 	<li><%= link_to 'FRAMING', '/framing', :class=> is_current_page?("framing") %></li>
 	<li><%= link_to 'AWARDS', '/awards', :class=> is_current_page?("awards")%></li>
 	<li><%= link_to 'ABOUT US', '/about-us', :class=> is_current_page?("about-us")%></li>
 	<li><%= link_to 'DESIGNER PAGE', '/designer-page', :class=> is_current_page?("designer-page")%></li>
-	<li><%= link_to 'HOME', 'home'%></li>
+	<li><%= link_to 'HOME', '/home'%></li>
 </ul>
 
-<% if is_current_controller?("collections")%>
+<% if is_current_controller?("collections") %>
 <ul id="nav">
 	<li><%= link_to 'PAINTINGS', '/collections/paintings', :class=> is_current_page?("paintings") %></li>
 	<li><%= link_to 'METAL ART', '/collections/metal-art', :class=> is_current_page?("metal-art") %></li>
@@ -23,5 +23,16 @@
 	<li><%= link_to 'PRINTS', '/collections/prints', :class=> is_current_page?("prints")%></li>
 	<li><%= link_to 'HOME DECOR', '/collections/home-decor', :class=> is_current_page?("home-decor")%></li>
 	<li><%= link_to 'GIFT IDEAS', '/collections/gift-ideas', :class=> is_current_page?("gift-ideas")%></li>
+</ul>
+<%end%>
+
+<% if is_current_page?("detail") %>
+<ul id="nav">
+	<li><%= link_to 'PAINTINGS', '/collections/paintings', :class=> is_referer?("paintings") %></li>
+	<li><%= link_to 'METAL ART', '/collections/metal-art', :class=> is_referer?("metal-art") %></li>
+	<li><%= link_to 'MIRRORS', '/collections/mirrors', :class=> is_referer?("mirrors")%></li>
+	<li><%= link_to 'PRINTS', '/collections/prints', :class=> is_referer?("prints")%></li>
+	<li><%= link_to 'HOME DECOR', '/collections/home-decor', :class=> is_referer?("home-decor")%></li>
+	<li><%= link_to 'GIFT IDEAS', '/collections/gift-ideas', :class=> is_referer?("gift-ideas")%></li>
 </ul>
 <%end%>
