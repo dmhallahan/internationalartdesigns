@@ -10,22 +10,26 @@
 <% if @page.title.downcase == 'collections'%>
 	<%# COLLECTIONS PAGE ONLY (For showing collections nav) %>
 	  <ul id='gallery'>
+	  <% unless @page.image_pages.nil? %>
 	    <% @page.image_pages.each do |i| %>
 	      <li>
 		<%= link_to image_tag(i.image.thumbnail("200x200#c").url), "/collections/#{i.caption}" %>
 		<p><%= "#{i.caption.upcase.gsub("-"," ")}" %></p>
 	      </li>
 	    <% end %>
+          <% end %>
 	  </ul>
 <% else %>
 	<%# PAGES WITH GALLERIES ONLY (Assigned on Images tab) %>
 	  <ul id='gallery'>
+          <% unless @page.image_pages.nil? %>
 	    <% @page.image_pages.each do |i| %>
 	      <li>
 		<%= link_to image_tag(i.image.thumbnail("200x200#c").url), 
 			   "/detail?image_id=#{i.image_id}&page_id=#{i.page_id}" %>
 	      </li>
 	    <% end %>
+          <% end %>
 	  </ul>
 <% end %>
 
