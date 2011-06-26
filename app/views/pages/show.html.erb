@@ -1,0 +1,70 @@
+
+
+<% content_for :body_content_left do %>
+
+
+<%# SHOW THE BODY PART %>
+<%= raw @page.parts.where(:title=>'Body').first.body %>
+
+
+<% if @page.title.downcase == 'collections'%>
+	<%# COLLECTIONS PAGE ONLY (For showing collections nav) %>
+	  <ul id='gallery'>
+	    <% @page.image_pages.each do |i| %>
+	      <li>
+		<%= link_to image_tag(i.image.thumbnail("200x200#c").url), "/collections/#{i.caption}" %>
+		<p><%= "#{i.caption.upcase.gsub("-"," ")}" %></p>
+	      </li>
+	    <% end %>
+	  </ul>
+<% else %>
+	<%# PAGES WITH GALLERIES ONLY (Assigned on Images tab) %>
+	  <ul id='gallery'>
+	    <% @page.image_pages.each do |i| %>
+	      <li>
+		<%= link_to image_tag(i.image.thumbnail("200x200#c").url), 
+			   "/detail?image_id=#{i.image_id}&page_id=#{i.page_id}" %>
+	      </li>
+	    <% end %>
+	  </ul>
+<% end %>
+
+
+
+
+
+<%# DETAIL PAGE ONLY (For showing an image's details) %>
+<% if @page.title.downcase == 'detail'%>
+
+	<div style="padding-bottom:20px;"><%= link_to "<< back to #{request.referer.split("/").last}",  
+						"javascript:history.back()" %></div>
+	<div style="padding-bottom:20px;"><%= image_tag(@img.url) %></div>
+	<div style="padding-bottom:20px;"><%= raw @caption %></div>
+	<div style="padding-bottom:20px;"><h5><%= "File name: #{@img.url.split("/").last.split(".").first}" %></h5></div>
+<% end %>
+
+
+
+<% end %><%# end Content_for %>
+
+
+
+
+
+<%= render :partial => "/shared/content_page" %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
