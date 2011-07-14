@@ -61,7 +61,10 @@ footer {
 
 /* PAGE PARTS */
 
-#body_content_title {position: relative; top: -120px; left: 0px; width:600px; color: #ffffff; font-size: 50px; font-weight: normal;}
+#body_content_title {position: relative; top: -120px; left: 0px; 
+							width:600px; color: #ffffff; font-size: 50px;
+							font-weight: normal;
+							padding-left: 20px;}
 
 
 
@@ -76,6 +79,8 @@ footer {
 #body_content_right ul {list-style: none;}
 #body_content_right a {color:#999966}
 #body_content_right a:hover, a:focus {color:#A32500; text-decoration:none;}
+
+#body_content.no_body_content_right #body_content_left  {padding-left: 20px; padding-right: 20px;}
 
 
 

@@ -99,7 +99,7 @@ GEM
       activesupport (= 3.0.7)
       rake (>= 0.8.7)
       thor (~> 0.14.4)
-    rake (0.9.2)
+    rake (0.8.7)
     refinerycms (0.9.9.22)
       bundler (~> 1.0)
       refinerycms-authentication (= 0.9.9.22)
@@ -168,6 +168,7 @@ PLATFORMS
 DEPENDENCIES
   fog
   rails (= 3.0.7)
+  rake (= 0.8.7)
   refinerycms (= 0.9.9.22)
   refinerycms-page-images (~> 1.0)
   sqlite3
