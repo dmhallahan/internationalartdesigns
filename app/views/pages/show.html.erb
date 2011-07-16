@@ -25,7 +25,7 @@
           <% unless @page.image_pages.nil? %>
             <% @page.image_pages.each do |i| %>
               <li>
-          <%= link_to image_tag(i.image.thumbnail("200x200#c").url), 
+          <%= link_to image_tag(i.image.thumbnail("200x200c").url), 
                "/detail?image_id=#{i.image_id}&page_id=#{i.page_id}" %>
               </li>
             <% end %>
