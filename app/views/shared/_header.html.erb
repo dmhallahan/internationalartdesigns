@@ -1,6 +1,6 @@
-
+<div id="header_wrapper">
  <div id="info">
-   <div><%= link_to image_tag("/stylesheets/images/logo.png"),'home', :id=>'logo'%><div>
+   <%= link_to image_tag("/stylesheets/images/logo.png"),'home', :id=>'logo'%>
    <div id="phone"><%= RefinerySetting.find_or_set(:phone_num, "")%></div>
    <div id="contact"><%= link_to "contact", "/about-us" %></div>
  </div>
@@ -36,3 +36,4 @@
 	<li><%= link_to 'GIFT IDEAS', '/collections/gift-ideas', :class=> is_referer?("gift-ideas")%></li>
 </ul>
 <%end%>
+</div>
