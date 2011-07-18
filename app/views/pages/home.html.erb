@@ -1,4 +1,16 @@
 <div id="content">
+
+  <div id="logo_area">
+	 <div id="byline">
+	   <%= RefinerySetting.find_or_set(:byline, "")%>
+	 </div>
+
+	 <div id="contact">
+	   <span id="phone"><%= RefinerySetting.find_or_set(:phone_num, "")%></span><br/>
+	   <span><%= link_to "contact", "/about-us" %></span>
+	 </div>
+	</div>
+  
 	<div id="bgrounds">
 	<%= image_tag "/stylesheets/images/bg_01.jpg" %>
 	<%= image_tag "/stylesheets/images/bg_02.jpg" %>
@@ -15,18 +27,9 @@
 	 <li class="button" id="button_5"><a href="/awards"></a></li>
 	</ul>
 	</div>
+  
 
-
-	<div id="logo_area">
-	 <div id="byline">
-	   <%= RefinerySetting.find_or_set(:byline, "")%>
-	 </div>
-
-	 <div id="contact">
-	   <span id="phone"><%= RefinerySetting.find_or_set(:phone_num, "")%></span><br/>
-	   <span><%= link_to "contact", "/about-us" %></span>
-	 </div>
-	</div>
+  
 </div>
 
 
