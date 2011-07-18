@@ -19,7 +19,7 @@ class PagesController < ApplicationController
     @page = Page.find("#{params[:path]}/#{params[:id]}".split('/').last)
 
     if @page.title.downcase == 'detail'
-	detail
+	    detail
     end
 
     if @page.try(:live?) || (refinery_user? && current_user.authorized_plugins.include?("refinery_pages"))
