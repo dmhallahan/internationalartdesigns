@@ -7,14 +7,11 @@ body {
 	font-family: Century Gothic, Helvetica, Trebuchet MS, sans-serif;
 	background-color: #2b2922;
 	color: #999966;
-	/*font-size: 18px;
-	text-align: center;*/
 	}
 	
 a {text-decoration:none; color:#A32500;}
 
 a:focus, a:hover {color:#A32500; text-decoration: underline;}
-
 
 
 /* HEADER */
@@ -25,34 +22,31 @@ header {
 }
 
 
+#header_wrapper {position:relative; margin:0 auto; width:950px;}
+
 /* HEADER DETAILS */
-#info {text-align: right; position: relative; top: 20px; right: 90px;}
-#logo {position:relative; right:-14px; margin: 0 0 10px 0;}
-#phone {font-size: 18px; color: #ffffff}
-#contact {font-size: 12px;}
+#info {position:relative; top:20px; text-align:right;}
+#logo {position:relative; right:-18px;}
+#phone {font-size:18px; color:#ffffff}
+#contact {font-size:12px;}
 
 #nav li {list-style: none; display:inline; padding-left:40px; padding-right:0px; text-align:right;}
 #nav a {color:#999966}
 #nav a:hover, a:focus {color:#A32500; text-decoration:none;}
 #nav a.highlight {color:#A32500;}
-#nav {position:relative; top:40px; right:0px;}
-
-
-
-
+#nav {position:relative; top:60px; right:0px; text-align:right;}
 
 
 /* FOOTER */
 footer {
-	/*background-image: url('images/footer.jpg');*/
 	background-color: #A39770;
 	color: #2b2922;
 	height: 120px;
-	width: 100%;
 	font-size: 12px;
-	text-align: center;
-	padding: 40px 0 10px 0;
-	margin: 60px 0 0 0;
+	width: 100%;
+	text-align:center;
+	padding-top:30px;
+	margin-top:30px;
 }
 
 
@@ -61,36 +55,19 @@ footer {
 
 /* PAGE PARTS */
 
-#body_content_title {position: relative; top: -120px; left: 0px; 
-							width:600px; color: #ffffff; font-size: 50px;
-							font-weight: normal;
-							padding-left: 20px;}
+#body_content_title  {position: relative; top: -140px; left: 20px; 
+							 color: #ffffff; font-size: 50px;
+							font-weight: normal; width:600px;}
 
 
 
-#body_content_right {
-	text-align: right;
-	font-size: 26px;
-	padding: 50px 50px 0 0;
-	width: 310px;
-	}
-
-#body_content_right li {padding: 0 0 30px 0;}
-#body_content_right ul {list-style: none;}
-#body_content_right a {color:#999966}
-#body_content_right a:hover, a:focus {color:#A32500; text-decoration:none;}
-
-#body_content.no_body_content_right #body_content_left  {padding-left: 20px; padding-right: 20px;}
-
-
-
-/* PORTFOLIO IMAGES */
-
-#portfolio_images li {float:left; margin:10px; padding:4px;}
+#body_content.no_body_content_right #body_content_left  {padding-left: 20px; padding-right: 20px; width:970px;}
 
 
 /* GALLERY */
+#gallery {padding: 0px; margin:0 auto;}
 #gallery li {float:left; margin:10px; padding:4px; list-style: none;}
+
 
 
 
