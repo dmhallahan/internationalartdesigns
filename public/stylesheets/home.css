@@ -38,6 +38,7 @@ footer {display: none;}
 .navrow li a {display: block;}
 	
 #navrow li a {height: 50px;}
+ul {margin: 0; padding: 0;}
 
 #button_1 {left: 0px; width: 150px;}
 #button_2 {left: 150px; width: 200px;}
