@@ -23,7 +23,7 @@
 	<li><%= link_to 'PRINTS', '/collections/prints', :class=> is_current_page?("prints")%></li>
 	<li><%= link_to 'HOME DECOR', '/collections/home-decor', :class=> is_current_page?("home-decor")%></li>
 	<li><%= link_to 'GIFT IDEAS', '/collections/gift-ideas', :class=> is_current_page?("gift-ideas")%></li>
-	<li><%= link_to 'FURNITURE', '/collections/furniture', :class=> is_current_page?("furniture")%></li>
+	<li><%= link_to 'FURNITURE', '/collections/furniture-page', :class=> is_current_page?("furniture")%></li>
 </ul>
 <%end%>
 
@@ -35,7 +35,7 @@
 	<li><%= link_to 'PRINTS', '/collections/prints', :class=> is_referer?("prints")%></li>
 	<li><%= link_to 'HOME DECOR', '/collections/home-decor', :class=> is_referer?("home-decor")%></li>
 	<li><%= link_to 'GIFT IDEAS', '/collections/gift-ideas', :class=> is_referer?("gift-ideas")%></li>
-	<li><%= link_to 'FURNITURE', '/collections/furniture', :class=> is_current_page?("furniture")%></li>
+	<li><%= link_to 'FURNITURE', '/collections/furniture-page', :class=> is_current_page?("furniture")%></li>
 </ul>
 <%end%>
 </div>
