@@ -39,10 +39,6 @@ module Iad
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
 
-    # Amazon S3 credentials for image storage with Refinery
-    ENV['S3_KEY']='AKIAJKUE4GQ2ZOEN3EIQ'
-    ENV['S3_SECRET']='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'
-    ENV['S3_BUCKET']='iad.bluecitysystems.com'
   end
 end
 Refinery.s3_backend = true
