@@ -1,0 +1,6 @@
+docker-compose.yml
+.git
+.bundle
+.credentials
+vendor
+
